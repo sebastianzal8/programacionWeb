@@ -17,22 +17,6 @@
           <div class="col-sm-4">
             <h3>Guía 1</h3>
             <p>Aplicaciones web</p>
-          </div>
-          <div class="col-sm-4">
-            <h3>Guía 2</h3>
-            <p>Construcción de una aplicación web</p>
-          </div>
-          <div class="col-sm-4">
-            <h3>Guía 3</h3>        
-            <p>Sitio web con PHP y MySQL</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--...-->
-    <div class="container mt-5">
-        <div class="row">
-          <div class="col-sm-4">
             <h3>Boton</h3>
             <a href="http://random.cat/">
                 <h1><button type="button" class="btn btn-primary btn-lg">Warning</button></h1>
@@ -46,18 +30,14 @@
                   <a href="assets/t-rex-roar.mp3">OGG</a> audio.
                 </p>
               </audio></p>
-          </div>
-          <div class="col-sm-4">
-            <h3>Imagen</h3>
+              <h3>Imagen</h3>
             <p><a href="/assets/cute_kitty_by_moonbarkcd16.jpg" target="_blank">
                 <img src="/assets/cute_kitty_by_moonbarkcd16.jpg" alt="Fjords" style="width:100%">
                 <div class="caption">
                   <p>Ver imagen del gato completa</p>
                 </div>
               </a></p>
-          </div>
-          <div class="col-sm-4">
-            <h3>Formulario</h3>        
+              <h3>Formulario</h3>        
             <p><form>
                 <br>
                 <h1>Formulario</h1><br>
@@ -76,16 +56,48 @@
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
               </form></p>
+            
+
+
           </div>
           <div class="col-sm-4">
-            
+            <h3>Guía 2</h3>
+            <p>Construcción de una aplicación web</p>
+            <h2>JavaScript en archivo aparte</h2>
+            <p id="demo">Un texto</p>
+            <button type="button" onclick="myFunction()">Cambiar texto</button>
+            <button type="button" onclick="alerta()">Alerta</button>
+            <script src="code.js"></script>
+
+            <h1>Sumar dos números</h1>  
+            <p>Por favor, introduce dos números:</p>  
+            <input id="num1"><br>  
+            <input id="num2">  
+            <button type="button" onclick="myFunction()">Sumar</button>  
+            <p id="sumando"></p>  
+            <script>  
+            function myFunction() {  
+              var x,y,suma,text;  
+              x = document.getElementById("num1").value;  
+              y = document.getElementById("num2").value;  
+              if (isNaN(x) || isNaN(y)) {  
+                text = "Es necesarios introducir dos números válidos";  
+              } else {  
+                suma=parseFloat(x)+parseFloat(y);  
+                text= suma;  
+              }  
+              document.getElementById("sumando").innerHTML = text;  
+            }  
+            </script>  
+          </div>
+          <div class="col-sm-4">
+            <h3>Guía 3</h3>        
+            <p>Sitio web con PHP y MySQL</p>
           </div>
         </div>
       </div>
-      
-      
-
-
+    </div>
+    <!--...-->
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
